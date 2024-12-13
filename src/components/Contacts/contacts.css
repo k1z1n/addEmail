@@ -1,0 +1,91 @@
+
+.forms {
+  background: linear-gradient(135deg, #0099ff, #66ccff);
+  padding: 40px 20px;
+  border-radius: 20px;
+  max-width: 1150px;
+  margin: 0 auto;
+  margin-bottom: 40px;
+}
+.form-title {
+  color: #fff;
+  font-size: 48px;
+  margin-bottom: 10px;
+}
+
+.form-subtitle {
+  color: #e6f2ff;
+  margin-bottom: 20px;
+}
+
+.contact-form {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.form-group {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  width: 100%;
+}
+
+.form-group input,
+.form-group textarea {
+  flex: 1 1 calc(50% - 20px);
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  font-size: 16px;
+}
+
+.form-group textarea {
+  height: 120px;
+  resize: none;
+  flex: 1 1 100%;
+}
+
+.form-footer {
+  width: 100%;
+  text-align: center;
+}
+
+.form-footer p {
+  color: #e6f2ff;
+  font-size: 12px;
+  margin-bottom: 20px;
+}
+
+.form-footer a {
+  color: #e6f2ff;
+  text-decoration: underline;
+}
+
+.form-footer button {
+  background-color: #000;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  font-size: 16px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.form-footer button:hover {
+  background-color: #333;
+}
+
+@media screen and (max-width: 670px) {
+  .contact-form {
+    flex-direction: column;
+  }
+
+  .forms p {
+    font-size: 1rem;
+  }
+
+  .form-title {
+    font-size: 2.5rem;
+  }
+}

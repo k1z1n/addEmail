@@ -1,0 +1,47 @@
+.advantages h2{
+  text-align: center;
+}
+
+.advantages__blocks {
+    display: flex;
+    justify-content: space-between;
+}
+
+.advantages__blocks img{
+  width: 30%;
+  height: auto;
+}
+
+@media screen and (max-width:1000px){
+
+  .advantages__blocks{
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 3rem;
+  }
+
+  .advantages__blocks img{
+    width: 45%;
+  }
+  
+}
+
+@media screen and (max-width:700px){
+
+  .advantages h2{
+    margin-top: 3rem;
+  }
+
+  .advantages__blocks{
+    flex-wrap: wrap;
+    gap: 1rem;
+  }
+
+  .advantages__blocks img{
+    width: 80%;
+
+  }
+  
+}
+
+
