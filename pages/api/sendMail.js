@@ -1,12 +1,12 @@
 import nodemailer from 'nodemailer';
 
 export default async function handler(req, res) {
-    const SMTP_HOST = 'smtp.beget.com'; // SMTP сервер Beget
+    const SMTP_HOST = ''; // SMTP сервер Beget
     const SMTP_PORT = 2525; // Порт
     const SMTP_SECURE = false; // Использовать TLS (SSL=false)
-    const SMTP_USER = 'test_work@kplatforma.ru'; // Почта отправителя
-    const SMTP_PASS = 'niyaz102938ZcBm!'; // Пароль почты
-    const TARGET_EMAIL = 'k1z1n@k1z1n.ru'; // Email получателя
+    const SMTP_USER = ''; // Почта отправителя
+    const SMTP_PASS = ''; // Пароль почты
+    const TARGET_EMAIL = ''; // Email получателя
 
     if (req.method === 'POST') {
         const {name, email, subject, message} = req.body;
